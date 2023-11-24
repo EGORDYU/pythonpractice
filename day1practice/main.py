@@ -5,4 +5,10 @@
 
 
 
-print("Hello "+ input("What is your name?"))
+# print("Hello "+ input("What is your name?"))
+
+name = input("How long is your name? (Please provide it) ")
+print(f"{len(name)} Letters Long")
+
+
+print(name)
