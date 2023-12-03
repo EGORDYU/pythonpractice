@@ -99,3 +99,26 @@
 #    else:
 #      jump()
        
+
+#MAZE 
+
+
+# def turn_right():
+#     turn_left()
+#     turn_left()
+#     turn_left()
+
+
+# def check():
+#     if not wall_in_front():
+#         move()
+#         turn_left()
+#     elif wall_in_front():
+#         turn_right()
+#     elif not wall_on_right():
+#         turn_right()
+#         move()
+        
+        
+# while not at_goal():
+#     check()
