@@ -42,7 +42,7 @@ for i in range(symbols) :
 password = list(password)
 random.shuffle(password)
 password = ''.join(password)
-print(password)
+
 
 
 
