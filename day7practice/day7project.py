@@ -1,7 +1,25 @@
 import random
 
 
-wordlist = ["leesin","diana","warwick","viego","bigb"]
+wordlist = [
+    "mystery", "quartz", "jazz", "buzz", "fuzzy", "puzzle", "quiz", "vodka", 
+    "wizard", "oxygen", "rhythm", "zodiac", "gypsy", "kayak", "voyage", 
+    "jigsaw", "zigzag", "xylophone", "strength", "zephyr", "jockey", 
+    "joyful", "jumble", "jungle", "junkyard", "lucky", "luxury", "lyrics", 
+    "ozone", "pajama", "phoenix", "pixel", "pizazz", "pizza", "pyjama", 
+    "python", "quacky", "squeeze", "squawk", "quizzer", "quizzes", "quorum", 
+    "rhubarb", "rhythm", "rickshaw", "schnapps", "scratch", "shiv", 
+    "snazzy", "sphinx", "spritz", "squish", "thumbscrew", "transcript", 
+    "transplant", "twelfth", "unzip", "uptown", "vaporize", "vixen", 
+    "vodka", "voodoo", "vortex", "walkway", "waltz", "wave", "wavy", 
+    "waxy", "wheezy", "whiskey", "whizzing", "wizard", "woozy", "wristwatch", 
+    "yacht", "yak", "yippee", "yoked", "yolk", "zephyr", "zigzagging", 
+    "zilch", "zipper", "zodiac", "zombie", "algorithm", "binary", "circuit", 
+    "database", "ethernet", "firewall", "gateway", "hyperlink", "internet", 
+    "java", "kernel", "keyword", "laptop", "malware", "network", "offline", 
+    "protocol", "python", "query", "router", "server", "torrent", "user", 
+    "virtual", "website", "widget", "wireless", "xml", "zip"
+]
 
 random_list = random.randint(0,len(wordlist))
 
@@ -46,3 +64,5 @@ while lives > 0:
         print(f"Guessed letters {guessed_letters}")
         lives -= 1
 
+if lives == 0:
+    print(f"The word was {chosen_word}")
