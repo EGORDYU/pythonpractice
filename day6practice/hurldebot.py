@@ -117,7 +117,6 @@
 #         turn_right()
 #     elif not wall_on_right():
 #         turn_right()
-#         move()
         
         
 # while not at_goal():
