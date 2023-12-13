@@ -72,7 +72,6 @@ def deal(cards):
     elif hitme.lower() == "n":
         draw_more(ai_score, "Computer")
 
-    determine_winner(ai_score, player_score)
 
 
     
@@ -80,6 +79,7 @@ def deal(cards):
         
 
 deal(cards)
+determine_winner(ai_score, player_score)
 
 # while playing == True:
 #     print(""" _     _            _    _            _    
