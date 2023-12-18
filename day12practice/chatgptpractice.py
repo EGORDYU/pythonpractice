@@ -58,5 +58,10 @@ diana_skins = {
     "darkwaters": ("darkblue", 8)
 }
 
+
+index_values = [diana_skins[name] for name in diana_skins]
+print(index_values)
+
+
 for skin, (color, rating) in diana_skins.items():
     print(f"The skin is {skin} the color is {color} and the rating is {rating}/10")
