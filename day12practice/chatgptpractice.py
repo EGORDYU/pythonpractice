@@ -32,21 +32,31 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-text = "it was the best of times it was the worst of times"
-text = text.lower()
-words =  text.split()
-# Your code here to count word frequencies
+# text = "it was the best of times it was the worst of times"
+# text = text.lower()
+# words =  text.split()
+# # Your code here to count word frequencies
 
-def count_string(words_list):
-    word_counts = {}
-    for word in words_list:
-        if word in word_counts:
-            word_counts[word] += 1
-        else:
-            word_counts[word] = 1
-    return word_counts
+# def count_string(words_list):
+#     word_counts = {}
+#     for word in words_list:
+#         if word in word_counts:
+#             word_counts[word] += 1
+#         else:
+#             word_counts[word] = 1
+#     return word_counts
     
 
 
-word_counts = count_string(words)
-print(word_counts)
+# word_counts = count_string(words)
+# print(word_counts)
+
+
+diana_skins = {
+    "bloodmoon": ("red", 7),
+    "winterblessed": ("blue", 9),
+    "darkwaters": ("darkblue", 8)
+}
+
+for skin, (color, rating) in diana_skins.items():
+    print(f"The skin is {skin} the color is {color} and the rating is {rating}/10")
