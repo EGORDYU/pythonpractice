@@ -44,8 +44,8 @@ def play_game(ban_rates):
     while game_going and modified_banrates:
         if (higher_lower == 'y' and initial_pick[1][1] > comparing_pick[1][1]) or (higher_lower == 'n' and initial_pick[1][1] < comparing_pick[1][1]):
             print(f"Correct! {initial_pick}% and {comparing_pick}% Next comparison.\n")
-            if comparing_pick[1][0] > initial_pick[1][0]:
-                initial_pick = comparing_pick
+
+            initial_pick = comparing_pick
             score+=1
             print(f"Score = {score}\n")
             modified_banrates.pop(comparing_pick[0])
